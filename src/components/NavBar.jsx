@@ -6,12 +6,12 @@ function Navbar() {
     return (
         <header className="sticky top-0 z-50 font-sans">
             {/* Top Main Navigation Bar */}
-            <div className="bg-[#131921] text-white flex items-center justify-between px-3 py-1.5 gap-2 md:gap-4 select-none">
+            <div className="bg-[#131921] text-white flex flex-wrap items-center justify-between px-3 py-1.5 gap-2 md:gap-4 select-none">
                 
                 {/* Amazon Brand / Logo */}
                 <Link 
                     to="/" 
-                    className="flex items-center px-2 py-1.5 border border-transparent hover:border-white rounded cursor-pointer transition-colors"
+                    className="flex shrink-0 items-center px-2 py-1.5 border border-transparent hover:border-white rounded cursor-pointer transition-colors"
                 >
                     <span className="text-2xl font-extrabold tracking-tight text-white flex items-baseline">
                         amazon<span className="text-xs text-[#FEBD69] font-bold ml-0.5">.eg</span>
@@ -28,7 +28,7 @@ function Navbar() {
                 </div>
 
                 {/* Search Bar */}
-                <div className="flex-1 max-w-3xl flex items-center h-10 rounded-md focus-within:ring-2 focus-within:ring-[#F3A847] overflow-hidden bg-white">
+                <div className="order-3 basis-full flex-1 max-w-none md:order-none md:basis-auto md:max-w-3xl flex items-center h-10 rounded-md focus-within:ring-2 focus-within:ring-[#F3A847] overflow-hidden bg-white">
                     <div className="hidden sm:flex items-center justify-center bg-[#E6E6E6] hover:bg-[#D4D4D4] text-[#555] text-xs h-full px-3 border-r border-[#CDCDCD] cursor-pointer transition-colors">
                         <span>All</span>
                         <i className="fa-solid fa-caret-down ml-1.5 text-[10px] text-[#666]"></i>
@@ -44,7 +44,7 @@ function Navbar() {
                 </div>
 
                 {/* Right Actions / Account & Cart */}
-                <div className="flex items-center gap-1 sm:gap-2">
+                <div className="flex shrink-0 items-center gap-1 sm:gap-2">
                     {/* Language Selector */}
                     <div className="hidden md:flex items-center gap-1 px-2 py-1.5 border border-transparent hover:border-white rounded cursor-pointer transition-colors">
                         <span className="text-sm">🇪🇬</span>
